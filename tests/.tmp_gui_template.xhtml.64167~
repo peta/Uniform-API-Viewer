@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; text/html; charset=utf-8" />
+		<title>Tryout of ClassFactory.js</title>
+		<script src="lib-js/file.js" language="JavaScript" type="text/javascript"></script>
+
+		<style type="text/css">
+			<![CDATA[
+				body {
+					-moz-border-radius:4px;
+					-moz-box-shadow: 2px 2px 8px grey;
+					border:1px solid #888888;
+					display:block;
+					height:600px;
+					margin:100px auto;
+					width:800px;
+				}
+				
+				div#layout > div {
+					border: 1px solid #ccc;
+				}
+				
+				div#layout > div#header {
+					background-color: #eee;
+				}
+				div#layout > div#context {
+					background-color: #ddd;
+					float: left;
+					width: 200px;
+				}
+				div#layout > div#main {
+									
+					margin: 0 0 0 200px;
+					
+					background-color: #ccc;
+					
+					border: 2px solid blue;
+				}
+				
+				
+				#rootMenu {
+					font-family:lucida Grande;
+font-size:16px;
+padding:0;
+-moz-user-select: none;
+				}
+				
+				.hasChildren {
+					
+				}
+				
+				.isExpanded {
+					
+				}
+				
+				
+				a.isActive {
+					
+				}
+				
+				li.isActive {
+					
+				}
+				
+				a.isActive {
+					font-weight: bold;
+				}
+				
+				ul.menu {
+					font-size:0.9em;
+					list-style:none;
+					padding-left:0.8em;
+					border-left: 1px solid white;
+					border-top: 1px solid white;
+				}
+				
+				li.menuItem {
+					background-color:rgba(255, 25, 0, 0.12);
+border:1px solid rgba(255, 128, 0, 0.4);
+padding-left:4px;
+				}
+				
+				a.menuItemCaption,
+				a:active.menuItemCaption,
+				a:visited.menuItemCaption,
+				a:hover.menuItemCaption {
+					display:block;
+					font-size:1em;
+					line-height:1.7em;
+				}
+			
+			]]>
+		</style>
+	</head>
+
+	<body>
+		<div id="layout">
+			
+			<div id="header">
+				<h1>UAV<sup>™</sup></h1>
+				<em>UniformApiViewer</em>
+			</div>
+						
+			<div id="context">
+				<ul id="rootMenu" class="menu">
+					<li class="menuItem hasChildren">
+						<a class="menuItemCaption">jQuery</a>
+						<ul class="menu isActive isExpanded">
+							<li class="menuItem hasChildren">
+								<a class="menuItemCaption">Selectors</a>
+								<ul class="menu">
+									<li class="menuItem"><a class="menuItemCaption">:first</a></li>
+									<li class="menuItem"><a class="menuItemCaption">:last</a></li>									
+								</ul>
+							</li>
+							<li class="menuItem"><a class="menuItemCaption">Filter</a></li>
+							<li class="menuItem">
+								<a class="menuItemCaption">Events</a>
+								<ul class="menu isActive isExpanded">
+									<li class="menuItem hasChildren isActive">
+										<a class="menuItemCaption">Event Handling</a>
+										<ul class="menu isActive isExpanded">
+											<li class="menuItem isActive"><a class="menuItemCaption isActive">bind(type, data, fn)</a></li>
+											<li class="menuItem"><a class="menuItemCaption">one(type, data, fn)</a></li>									
+											<li class="menuItem"><a class="menuItemCaption">trigger(type, data)</a></li>									
+										</ul>
+									</li>
+									<li class="menuItem"><a class="menuItemCaption">Live Events</a></li>									
+									<li class="menuItem"><a class="menuItemCaption">Interaction Helpers</a></li>									
+								</ul>
+							</li>
+						</ul>		
+					</li>
+					<li class="menuItem hasChildren">
+						<a class="menuItemCaption">MooTools</a>
+					</li>
+					<li class="menuItem hasChildren">
+						<a class="menuItemCaption">Adobe Scripting</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="main">
+				&nbsp;
+			</div>
+		</div>
+	</body>
+</html>
