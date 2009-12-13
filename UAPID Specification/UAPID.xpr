@@ -6,10 +6,6 @@
         <options/>
     </meta>
     <projectTree name="UAPID.xpr">
-        <folder name="Sample Files"/>
-        <folder name="Schemata">
-            <file name="Schemata/UniformAPIDocumentation.xsd"/>
-        </folder>
-        <folder name="Specs"/>
+        <folder path="."/>
     </projectTree>
 </project>
