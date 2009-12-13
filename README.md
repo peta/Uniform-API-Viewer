@@ -51,7 +51,7 @@ what's possible with JavaScript animations. Cause it bases on the latest version
 every developer, whether working on a Windows, Mac OS or *nix machine can leverage the conveniences
 of UAP.
 
-### FAQ
+## FAQ
 #### Why are you using XML as driving force instead of JSON?
 Well, despite XML isn't as compact as JSON, it is literally still the most versatile data basis
 for my purposes. With the XML Schema for _Uniform API Documents_ I defined a reference structure 
