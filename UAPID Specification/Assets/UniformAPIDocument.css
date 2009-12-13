@@ -1,0 +1,148 @@
+* {
+	display:block;
+}
+
+directory {
+    background-color: #888899;
+    margin: 0;
+    padding: 0;
+}
+
+document {
+    border: 20px solid #fff;
+    margin: 35px 50px;
+    background-color: #ddd;
+    -moz-box-shadow: 4px 4px 15px #555566;
+    padding: 84px 37px;
+}
+
+metadata:before, 
+meta:before, 
+
+manual:before, 
+reference:before, 
+group:before, 
+
+package:before, 
+class:before, 
+function:before, 
+property:before 
+{
+    color:white;
+	content:"...";
+	display:inline-block;
+	font-family:monaco;
+	font-size:13px;
+	left:-15px;
+	letter-spacing:1px;
+	padding:2px 7px;
+	position:relative;
+	text-transform:uppercase;
+	top:-15px;
+	/*background-color:black;*/
+}
+
+metadata, 
+meta, 
+manual, 
+reference, 
+group, 
+package, 
+class, 
+function, 
+property 
+{
+    /*border: 1px solid white;*/
+    margin: 25px 0px 0 0;
+    padding: 15px 8px 4px 10px;
+	background-color: rgba(255,255,255,0.2)
+}
+
+
+/* MANUAL GROUP REFERENCE ========================================================== */
+manual,
+group,
+reference {
+	border: 3px solid #7d1431;
+	-moz-box-shadow: 2px 2px 5px #888;
+}
+
+manual:before,
+group:before,
+reference:before {
+	color: #ddd;
+	background-color: #7d1431;
+}
+
+manual:before { content: "Manual"; }
+group:before { content: "Group"; }
+reference:before { content: "Reference"; }
+
+/* ================================================================================= */
+
+/* PACKAGE CLASS FUNCTION PROPERTY ================================================= */
+package {
+	border: 3px solid #09517f;
+	background-color: rgba(9,81,127,0.2);
+	/*-moz-box-shadow: 2px 2px 5px #888;*/ 
+}
+
+class,
+property,
+function {
+	border-top: 3px solid #09517f;
+	background-color: rgba(9,81,127,0.2);
+	/*-moz-box-shadow: 2px 2px 5px #888;*/ 
+}
+
+package:before,
+class:before,
+property:before,
+function:before {
+	left: -10px;
+	color: #ddd;
+	background-color: #09517f;
+}
+
+package:before { content: "Package"; }
+class:before { content: "Class"; }
+function:before { content: "Function"; }
+property:before { content: "Property"; }
+
+/* ================================================================================= */
+
+/* DOCUMENTATION MANUAL ========================================================== */
+documentation,
+manual {
+	border: 3px solid #7d1431;
+	-moz-box-shadow: 2px 2px 5px #888;
+}
+
+manual:before,
+documentation:before {
+	color: #ddd;
+	background-color: #7d1431;
+}
+
+
+documentation:before { content: "Documentation"; }
+
+/* ================================================================================= */
+
+metadata, meta, reference, group, manual {
+    /*border: 2px solid gray;*/
+    margin: 25px 0px;
+    padding: 15px;
+}
+
+metadata documentTitles, metadata *, meta * {
+    background-color: rgba(255, 0, 0, 0.2);
+    margin: 5px 5px 5px 8px;
+    padding: 2px;
+}
+
+metadata documentTitles, metadata documentTitles short, metadata documenttitles full {
+}
+
+metadata author, metadata website-url, metadata description, metadata license {
+}
